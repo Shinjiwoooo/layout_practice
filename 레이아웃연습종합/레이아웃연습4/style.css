@@ -1,0 +1,128 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrapper{
+    width:100%;
+    background-color:purple;
+}
+.container{
+    width:1200px;
+    height:800px;
+    margin: 0 auto;
+}
+
+.header{
+    background-color:red;
+    /* width:1200px; */
+    height:120px;
+    /* margin:0 auto; */
+    position: relative;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.header .logo{
+    background-color: pink;
+    width:120px;
+    height:80px;
+    margin-left:10px;
+    background-image: url("https://www.akamai.com/site/im-demo/perceptual-standard.jpg?imbypass=true");
+    background-size: cover;
+}
+
+.logo_menu ul{
+    display:flex;
+}
+
+.logo_menu ul li {
+    padding:50px;
+}
+
+/* .logo_menu ul {
+    width: 400px;
+    display:flex;
+    background : #fff;
+    justify-content: space-around;
+} */
+
+.main {
+    /* width:1200px; */
+    height: 560px;
+    background-color:blue;
+    /* margin:0 auto; */
+    position: relative;
+}
+.main .top_box {
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between;
+    width:1000px;
+    height:300px;
+    background-color: #fff;
+}
+
+.main .top_box div{
+    background-color: aquamarine;
+    width: calc(100% / 2 - 30px);
+}
+.main .bottom_box div{
+    background-color: rgb(131, 179, 44);
+    width: calc(100% / 2 - 30px);
+}
+
+.main .bottom_box{
+    margin: 0 auto;
+    display:flex;
+    justify-content:space-between;
+    width:1000px;
+    height:300px;
+    background-color: rgb(56, 44, 44);
+}
+
+
+.footer{
+    height:120px;
+    background-color:green;
+    position: relative;
+}

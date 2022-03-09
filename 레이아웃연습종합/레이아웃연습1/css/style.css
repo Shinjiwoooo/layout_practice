@@ -1,0 +1,235 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrapperA {
+    width: 100%;
+    height: 100vh;
+}
+
+.headerWrapper {
+    background-color:rgba(0, 0, 0, 0.75);
+    /* 0이투명 0.1 ~ 0.9까지 1이정상 */
+    width: 100%;
+}
+
+header{
+    width:1200px;
+    height:100px;
+    position: relative;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+header .logo{
+    margin-left:20px; 
+    /* 왼쪽에서 10px 떨어지게 해달라 */
+    width:120px;
+    height:80px;
+    /* background-color:pink; */
+    /* position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    /* background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Pepsi_logo_new.svg/2560px-Pepsi_logo_new.svg.png");
+    background-size:cover; */ 
+    position: relative;
+    /* margin-right:200px; */
+    /* background-color:red; */
+
+}
+header .logo h1 {
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:white;
+}
+
+header .menu ul {
+    /* background-color: rgb(231, 71, 71); */
+    display:flex;
+    width:500px;
+    justify-content:space-around;
+    /* background-color: rgb(28, 201, 57); */
+    
+}
+header .menu ul li {
+    color:white;
+    font-size:20px;
+}
+
+header .login {
+    background-color:yellow;
+    border-radius: 40%;
+    margin-right:20px;
+    width:120px;
+    height:50px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    color:black;
+    font-size:20px;
+    cursor: pointer;
+}
+
+.mainwrapper {
+    width:100%;
+    background-color:pink;
+}
+
+.mainwrapper main {
+    width:1200px;
+    height:100%;
+    margin:0 auto;
+    display: flex;
+    /* padding-top: 80px; */
+}
+.mainwrapper main .left_content {
+    width:30%;
+    margin-right: 15px;
+}
+.mainwrapper main .left_content .left_textbox {
+    width:100%;
+    height:30px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+.mainwrapper main .left_content .left_textbox p{
+    color:white;
+}
+
+.mainwrapper main .left_content .left_contentbox{
+  width:100%;
+  background-color:purple;
+
+}
+
+.mainwrapper main .left_content .left_contentbox {
+   padding: 5px 0;
+}
+
+.mainwrapper main .left_content .box {
+    width:80%;
+    height: 40px;
+    margin: 15px auto;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mainwrapper main .left_content .box p {
+    font-size:20px;
+}
+
+.mainwrapper main .right_content {
+    width:70%;
+    height:100%;
+}
+
+.right_content .topbox {
+    Width:100%;
+    height: 90px;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.right_content .topbox .topbox_left {
+    
+    
+}
+
+.right_content .topbox .topbox_left select{
+    width:150px;
+    height:30px;  
+    text-align: center;
+}
+
+.right_content .topbox .topbox_right{
+    width:35%;
+    height:100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.right_content .topbox .topbox_right > div{
+    width:30px;
+    height:30px;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right_content .topbox .topbox_right > div p {
+    
+    
+}
+
+.right_content .topbox .topbox_right input{
+    width:100px;
+    height:30px;
+}
+
+.right_content .bottombox .cardWrap {
+    display: flex;
+    justify-content: space-around;
+}
+
+.right_content .bottombox .cardWrap > div {
+    width: calc(100% / 3 - 20px);
+    margin-bottom: 10px;
+    height: 400px;
+    background-color: green;
+    border-radius: 15px;
+}
+
+
+
